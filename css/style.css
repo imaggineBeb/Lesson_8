@@ -1,0 +1,539 @@
+/* Обнуление */
+@import "null.css";
+
+/* Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+@font-face {
+	font-family: "karlson";
+	src: url("../fonts/karlson.woff2") format("woff2"), url("../fonts/karlson.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Codename Coder Free 4F";
+	src: url("../fonts/CodenameCoderFree4F-Bold.woff2") format("woff2"), url("../fonts/CodenameCoderFree4F-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "DS Diploma";
+	src: url("../fonts/DSDiploma.woff2") format("woff2"), url("../fonts/DSDiploma.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* -------------------------------------------------------- */
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	background-color: rgba(253, 253, 253, 0.541);
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 20px 0 20px 0;
+}
+
+body {
+	font-family: "Codename Coder Free 4F";
+	background: url("../img/bg.jpeg") 0 0 fixed;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+	font-family: "DS Diploma";
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.header {
+	background: rgba(34, 32, 32, 0.787);
+	max-width: 90%;
+	text-align: center;
+	margin: 0 auto 30px;
+	padding: 20px;
+	border: 9px solid rgb(255, 255, 255);
+	border-radius: 20px;
+	background: rgb(238, 241, 241);
+	background: radial-gradient(circle, rgba(238, 241, 241, 1) 0%, rgba(230, 232, 233, 0.5858718487394958) 15%, rgba(209, 71, 95, 1) 71%, rgba(201, 54, 79, 1) 82%, rgba(227, 17, 52, 1) 100%);
+}
+
+.red {
+	color: red;
+}
+
+.header__title {
+	margin: 0 0 10px 0;
+}
+.header__title h1 {
+	color: white;
+	font-size: 50px;
+}
+.header__title h1::after {
+	content: "";
+	background: url("../img/blood.png") 0 -24px/ 149px 100px no-repeat, url("../img/blood2.png") 165px 0px/ 139px 71px no-repeat;
+	max-width: 325px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+}
+
+.header__subtitle {
+	padding: 0 20px;
+	color: rgb(255, 255, 255);
+	margin: 0px 0px 20px 0px;
+}
+
+.header__subtitle h2 {
+	font-family: "Codename Coder Free 4F";
+	font-size: 30px;
+}
+.header__buttons {
+	width: 90%;
+	margin: 0 auto 30px;
+}
+.header__button1 {
+	display: inline-block;
+	width: 300px;
+	font-size: 30px;
+	border: 5px solid rgb(144, 28, 28);
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	background: #333333;
+}
+.header__button1 a {
+	color: #ffffff;
+	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+.header__button1::first-letter {
+	color: red;
+	text-shadow: 2px 2px 0 #da1c1c, 4px 4px 0 #740404;
+}
+.header__button2 {
+	display: inline-block;
+	width: 300px;
+	font-size: 30px;
+	border: 5px solid rgb(144, 28, 28);
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	background: #333333;
+}
+.header__button2 a {
+	color: #ffffff;
+	text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+.header__button2::first-letter {
+	color: red;
+	text-shadow: 2px 2px 0 #da1c1c, 4px 4px 0 #740404;
+}
+.header__list {
+	visibility: hidden;
+	border: 10px solid white;
+	border-radius: 20px;
+	max-width: 800px;
+	text-align: left;
+	padding: 10px;
+	font-size: 26px;
+	color: white;
+	background: url("../img/police-depart.jpeg") 0 0 / cover no-repeat;
+}
+.header__list:target {
+	visibility: visible;
+}
+.header__list a:visited {
+	color: red;
+}
+.header__list a {
+	color: white;
+}
+
+.header__list li:not(:last-child) {
+	padding: 0 0 10px 0;
+}
+.header__list ul {
+	padding: 10px 0 0 30px;
+}
+.header__list li:hover::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url("../img/resident-logo.png") 0 5px / 25px no-repeat;
+}
+.header__list li a:hover {
+	font-size: 30px;
+	color: rgb(194, 15, 15);
+}
+/* -----------------------------MAIN------------------------------------------------- */
+
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.main__begin {
+	color: white;
+	background: url("../img/mension.jpg") 0 0 / contain fixed;
+	padding: 50px;
+	border-radius: 10px;
+	border: 10px solid black;
+	width: 90%;
+	line-height: 1.2;
+	text-align: right;
+	margin: 0 auto 20px;
+}
+.main__begin-title {
+	text-align: right;
+	background: rgba(0, 0, 0, 0.486);
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0px 0px 15px 0px;
+}
+.main__begin-text {
+	background: rgba(0, 0, 0, 0.486);
+	font-size: 28px;
+}
+.main__plot {
+	color: white;
+	background: url("../img/mension.jpg") 0 0 / contain fixed;
+	padding: 50px;
+	border-radius: 10px;
+	border: 10px solid black;
+	width: 90%;
+	line-height: 1.4;
+	margin: 0 auto 70px;
+}
+.main__plot-title {
+	font-size: 35px;
+	background: rgba(0, 0, 0, 0.486);
+	margin: 0px 0px 15px 0px;
+}
+.main__plot-text {
+	background: rgba(0, 0, 0, 0.486);
+	font-size: 28px;
+}
+/* -----------------------ИГРОВОЙ ПРОЦЕСС-------------------------------- */
+.main__game-process {
+	font-size: 30px;
+	width: 95%;
+	margin: 0 auto;
+}
+.main__game-process h2 {
+	text-align: center;
+	font-size: 45px;
+	margin: 0px 0px 10px 0px;
+}
+
+.game-process__graphics {
+	margin: 0px 0px 50px 0px;
+	padding: 20px;
+	background: rgba(5, 5, 5, 0.815);
+	border: 10px dashed rgb(255, 255, 255);
+	border-radius: 20px;
+}
+.game-process__graphics:hover {
+	font-size: 33px;
+	color: white;
+}
+
+.graphics__title {
+	margin: 0px 0px 15px 0px;
+}
+.graphics__text {
+	margin: 0px 0px 50px 0px;
+}
+.graphics__image {
+	text-align: center;
+}
+.graphics__image img {
+	width: 70%;
+	text-align: center;
+}
+.graphics__image img:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+.graphics__image img:hover {
+	border: 5px solid white;
+	border-radius: 20px;
+	width: 75%;
+}
+
+.game-process__inventory {
+	margin: 0px 0px 50px 0px;
+	padding: 20px;
+	border: 10px solid rgb(255, 0, 0);
+	border-radius: 20px;
+}
+
+.game-process__inventory:hover {
+	margin: 0px 0px 50px 0px;
+	background: rgba(0, 0, 0, 0.486);
+	color: white;
+	line-height: 1.5;
+	padding: 20px;
+	background: rgb(110, 111, 111);
+	background: radial-gradient(circle, rgba(110, 111, 111, 1) 0%, rgba(81, 82, 83, 1) 20%, rgba(119, 47, 67, 1) 57%, rgba(205, 27, 59, 1) 82%, rgba(73, 64, 65, 1) 100%);
+	border: 15px solid rgb(255, 255, 255);
+}
+.inventory__image {
+	text-align: center;
+	opacity: 1;
+}
+.inventory__image :hover {
+	opacity: 0;
+}
+.inventory__title {
+	margin: 0px 0px 20px 0px;
+}
+
+.inventory__text {
+	margin: 0px 0px 20px 0px;
+}
+/* Эксперимент */
+.ost .game-process__heal p:nth-child(1) {
+	color: rgb(21, 177, 216);
+}
+.ost .game-process__heal p:nth-child(2) {
+	color: rgb(23, 243, 16);
+}
+/* Эксперимент */
+.game-process__heal {
+	background: rgba(30, 29, 31, 0.644);
+	padding: 20px;
+	border: 20px dotted red;
+	margin: 0px 0px 50px 0px;
+}
+
+.heal__title {
+	margin: 0px 0px 20px 0px;
+}
+.heal__text p {
+	padding: 0 0 15px 0;
+}
+.heal__text p:last-of-type {
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.main__enemies {
+	background: rgb(62, 64, 64);
+	background: radial-gradient(circle, rgba(62, 64, 64, 1) 0%, rgba(61, 52, 54, 1) 41%, rgba(68, 61, 64, 1) 82%, rgba(22, 20, 20, 1) 100%);
+	margin: 0 auto 30px;
+	font-size: 30px;
+	width: 98%;
+	border: 5px solid rgb(131, 29, 29);
+	border-radius: 20px;
+	color: white;
+	padding: 20px;
+}
+.main__enemies h3::first-letter {
+	color: red;
+}
+.enemies__title {
+	margin: 0px 0px 20px 0px;
+}
+.enemies__text {
+	margin: 0px 0px 20px 0px;
+}
+.zombie {
+	margin: 0px 0px 20px 0px;
+}
+.zombie:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.zombie__title {
+	margin: 0px 0px 15px 0px;
+}
+.zombie__cart img {
+	width: 45%;
+}
+.zombie__cart p {
+	display: inline-block;
+	width: 50%;
+}
+.slime {
+	margin: 0px 0px 20px 0px;
+}
+.slime:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.slime__title {
+	margin: 0px 0px 15px 0px;
+}
+.slime__cart img {
+	width: 45%;
+}
+.slime__cart p {
+	margin: 30px 0 0 0;
+	display: inline-block;
+	width: 50%;
+}
+.insect {
+	margin: 0px 0px 20px 0px;
+}
+.insect:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.insect__title {
+	margin: 0px 0px 15px 0px;
+}
+.insect__cart img {
+	width: 40%;
+}
+.insect__cart p {
+	margin: 200px 0 0 0;
+	display: inline-block;
+	width: 50%;
+}
+.ivy {
+	margin: 0px 0px 20px 0px;
+}
+.ivy:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.ivy__title {
+	margin: 0px 0px 15px 0px;
+}
+.ivy__cart img {
+	width: 45%;
+}
+.ivy__cart p {
+	margin: 40px 0px 0px 0px;
+	display: inline-block;
+	width: 40%;
+}
+.tyrant {
+	margin: 0px 0px 20px 0px;
+}
+.tyrant:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.tyrant__title {
+	margin: 0px 0px 15px 0px;
+}
+.tyrant__cart img {
+	width: 45%;
+}
+.tyrant__cart p {
+	font-size: 20px;
+	display: inline-block;
+	width: 48%;
+}
+.alligator {
+	margin: 0px 0px 20px 0px;
+}
+.alligator:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.alligator__title {
+	margin: 0px 0px 15px 0px;
+}
+.alligator__cart img {
+	width: 45%;
+}
+.alligator__cart p {
+	margin: 12px 0px 0px 0px;
+	font-size: 28px;
+	width: 53%;
+	display: inline-block;
+}
+.birkin:hover {
+	border: 8px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.637);
+}
+.birkin__title {
+	margin: 0px 0px 15px 0px;
+}
+.birkin__cart img {
+	width: 45%;
+}
+.birkin__cart p {
+	margin: 15px 0px 0px 0px;
+	display: inline-block;
+	width: 40%;
+}
+.footer {
+	background: rgba(8, 8, 8, 0.883);
+	color: white;
+	padding: 15px;
+	border: 10px solid black;
+	border-radius: 10px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 30px;
+}
+.footer__text {
+	margin: 0px 0px 20px 0px;
+}
+
+.footer p {
+	line-height: 1.3;
+	letter-spacing: 2px;
+}
+.footer p:not(:last-child) {
+	padding: 0 0 20px 0;
+}
+
+.footer__btn {
+	width: 100%;
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+
+.footer__btn a {
+	text-align: center;
+	width: 10%;
+	color: white;
+	background-color: red;
+}
+.button {
+	display: inline-block;
+	padding: 20px 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	box-shadow: 0 5px 0 0 white;
+}
+.button:hover {
+	background-color: rgb(204, 48, 48);
+	margin: 1px 0px 0px 0px;
+	box-shadow: 0 4px 0 0 white;
+}
+
+.button:active {
+	margin: 4px 0px 0px 0px;
+	box-shadow: inset 0 0px 9px 0 rgb(0, 0, 0);
+}
